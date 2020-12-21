@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1025462889091",
+    "firebase_url": "https://apprelatos-15b93.firebaseio.com",
+    "project_id": "apprelatos-15b93",
+    "storage_bucket": "apprelatos-15b93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025462889091:android:5f50e47888e0c44b2e89b6",
+        "android_client_info": {
+          "package_name": "com.proyecto.apprelatos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025462889091-1ah38oj65s6ehng0o2q4e4lf6m0om8tk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzGCGVRs3OSP2uAxa_qs69iCyGSAl9OkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025462889091-1ah38oj65s6ehng0o2q4e4lf6m0om8tk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
