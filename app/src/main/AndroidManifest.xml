@@ -9,13 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <!-- Activity para la la presentación de la aplicación-->
+        <activity android:name=".actividaes.PortadaActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Activity para mostrar la lista del Relatos-->
+        <activity android:name=".actividaes.RelatosActivity">
+        </activity>
+
     </application>
 
 </manifest>

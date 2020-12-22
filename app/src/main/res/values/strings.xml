@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AppRelatos</string>
+    <string name="app_inicio">AppRelatos</string>
+
+    <!-- Etiquetas layout Inicio -->
+
+    <string name="labelAutor">Por: Guillem Gallifa</string>
+
 </resources>
