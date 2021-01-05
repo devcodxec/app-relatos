@@ -21,6 +21,15 @@
         <activity android:name=".actividades.RelatosActivity">
         </activity>
 
+        <!-- Activity para mostrar la descripcion del Relato-->
+        <activity
+            android:name=".actividades.DescripcionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
