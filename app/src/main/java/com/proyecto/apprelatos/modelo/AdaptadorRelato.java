@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.proyecto.apprelatos.R;
+import com.proyecto.apprelatos.actividades.DescripcionActivity;
 
 import java.util.ArrayList;
 
@@ -42,6 +43,18 @@ public class AdaptadorRelato extends ArrayAdapter<Relato> {
         titulo.setText(relato.getTitulo());
 
         Log.i(LOG_APP, "**IMAGEN FINAL: " +relato.getImagen());
+
+        titulo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent verInformacion = new Intent(activity, DescripcionActivity.class);
+
+                verInformacion.putExtra("tituloRelato",titulo.getText() );
+                verInformacion.putExtra("descripcionRelato", relato.getDescripcion());
+                verInformacion.putExtra("imagenRelato",relato.getImagen());
+                activity.startActivity(verInformacion);
+            }
+        });
 
         return vista;
 
