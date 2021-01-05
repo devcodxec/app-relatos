@@ -1,4 +1,4 @@
-package com.proyecto.apprelatos.actividaes;
+package com.proyecto.apprelatos.actividades;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
