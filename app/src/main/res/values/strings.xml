@@ -6,4 +6,11 @@
 
     <string name="labelAutor">Por: Guillem Gallifa</string>
 
+    <!-- Opciones del menú -->
+    <string name="labelSalir">Salir</string>
+    <string name="labelIdioma">Idioma</string>
+    <string name="labelAbout">Acerca de</string>
+    <string name="aboutMensaje">Desarrollado por: devCodx Software Development</string>
+
+
 </resources>
