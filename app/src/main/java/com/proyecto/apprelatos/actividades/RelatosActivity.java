@@ -1,6 +1,9 @@
 package com.proyecto.apprelatos.actividades;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +15,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.proyecto.apprelatos.R;
+import com.proyecto.apprelatos.dialogos.IdiomaDialogFragment;
 import com.proyecto.apprelatos.modelo.AdaptadorRelato;
 import com.proyecto.apprelatos.modelo.Relato;
 
@@ -33,6 +37,8 @@ public class RelatosActivity  extends AppCompatActivity {
     ArrayList<Relato> listaRelatos;
 
     Relato relato;
+
+    IdiomaDialogFragment idiomaDialogFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,5 +118,33 @@ public class RelatosActivity  extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void limpiarDatosFirebase(){
+        listaRelatos.clear();
+        Log.i(LOG_APP, "**TAMAÑO FINAL!!!!!!!!!: " +listaRelatos.size());
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.principal, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.Idioma:
+                idiomaDialogFragment = new IdiomaDialogFragment();
+                idiomaDialogFragment.show(getFragmentManager(),"Idioma");
+                return true;
+            case R.id.Salir:
+                super.onBackPressed(); finishAffinity(); System.exit(0);
+                return true;
+            case R.id.About:
+                //startActivity(new Intent(this, AboutActivity.class));
+                return true;
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
