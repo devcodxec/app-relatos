@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppRelatos</string>
+    <string name="app_name">Relatos del Buscador</string>
     <string name="app_inicio">AppRelatos</string>
 
     <!-- Etiquetas layout Inicio -->
@@ -13,9 +13,15 @@
     <string name="aboutMensaje">Desarrollado por: devCodx Software Development</string>
 
     <!-- Opciones del dialogo idioma -->
-    <string name="tituloDialogo">Seleccionar Idioma</string>
-    <string name="opcionAceptarDialogo">Aceptar</string>
-    <string name="opcionCancelarDialogo">Cancelar</string>
+    <string name="tituloDialogoIdioma">Seleccionar Idioma</string>
+    <string name="opcionAceptarDialogoIdioma">Aceptar</string>
+    <string name="opcionCancelarDialogoIdioma">Cancelar</string>
     <string name="toastMensajeIdioma">El idioma se ha modificado correctamente</string>
+
+    <!-- Opciones del dialogo salir -->
+    <string name="tituloDialogoSalir">Salir</string>
+    <string name="mensajeDialogoSalir">Esta seguro que desea salir?</string>
+    <string name="opcionAceptarDialogoSalir">Aceptar</string>
+    <string name="opcionCancelarDialogoSalir">Cancelar</string>
 
 </resources>

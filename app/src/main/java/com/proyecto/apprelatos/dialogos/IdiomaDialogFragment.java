@@ -26,9 +26,8 @@ public class IdiomaDialogFragment extends DialogFragment {
         // Uso de la clase Builder para la construcción del diálogo
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-
         // Anadir los componentes del diálogo
-        builder.setTitle(R.string.tituloDialogo);
+        builder.setTitle(R.string.tituloDialogoIdioma);
         builder.setSingleChoiceItems( idiomas, itemSelecionado, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int item) {
@@ -36,7 +35,7 @@ public class IdiomaDialogFragment extends DialogFragment {
                 Log.i(LOG_APP, "**IDIOMA SELECCIONADO: " + item);
             }
         })
-        .setPositiveButton(R.string.opcionAceptarDialogo, new DialogInterface.OnClickListener() {
+        .setPositiveButton(R.string.opcionAceptarDialogoIdioma, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
                 if(itemSelecionado==0){
@@ -48,11 +47,9 @@ public class IdiomaDialogFragment extends DialogFragment {
                     relatosActivity.limpiarDatosFirebase();
                     relatosActivity.obtenerDatosFirebaseEN();
                 }
-
-
             }
         })
-        .setNegativeButton(R.string.opcionCancelarDialogo, new DialogInterface.OnClickListener() {
+        .setNegativeButton(R.string.opcionCancelarDialogoIdioma, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
 

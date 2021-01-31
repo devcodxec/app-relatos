@@ -1,14 +1,11 @@
 package com.proyecto.apprelatos.actividades;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -16,6 +13,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.proyecto.apprelatos.R;
 import com.proyecto.apprelatos.dialogos.IdiomaDialogFragment;
+import com.proyecto.apprelatos.dialogos.SalirDialogFragment;
 import com.proyecto.apprelatos.modelo.AdaptadorRelato;
 import com.proyecto.apprelatos.modelo.Relato;
 
@@ -39,6 +37,7 @@ public class RelatosActivity  extends AppCompatActivity {
     Relato relato;
 
     IdiomaDialogFragment idiomaDialogFragment;
+    SalirDialogFragment salirDialogFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,6 +130,10 @@ public class RelatosActivity  extends AppCompatActivity {
         return true;
     }
 
+    public void salir(){
+        super.onBackPressed(); finishAffinity(); System.exit(0);
+    }
+
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.Idioma:
@@ -138,7 +141,8 @@ public class RelatosActivity  extends AppCompatActivity {
                 idiomaDialogFragment.show(getFragmentManager(),"Idioma");
                 return true;
             case R.id.Salir:
-                super.onBackPressed(); finishAffinity(); System.exit(0);
+                salirDialogFragment = new SalirDialogFragment();
+                salirDialogFragment.show(getFragmentManager(),"Salir");
                 return true;
             case R.id.About:
                 //startActivity(new Intent(this, AboutActivity.class));
