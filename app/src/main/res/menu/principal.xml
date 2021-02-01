@@ -19,8 +19,14 @@
         android:title="@string/labelSalir"/>
 
     <item
-        android:id="@+id/About"
+        android:id="@+id/Informacion"
         android:icon="@android:drawable/ic_menu_info_details"
         android:orderInCategory="200"
-        android:title="@string/labelAbout"/>
+        android:title="@string/labelInformacion"/>
+
+    <item
+        android:id="@+id/Ayuda"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:orderInCategory="200"
+        android:title="@string/labelAyuda"/>
 </menu>

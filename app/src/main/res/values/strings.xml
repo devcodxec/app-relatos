@@ -4,13 +4,13 @@
 
     <!-- Etiquetas layout Inicio -->
 
-    <string name="labelAutor">Por: Guillem Gallifa</string>
+    <string name="labelInicio">Cargando...</string>
 
     <!-- Opciones del menú principal-->
     <string name="labelSalir">Salir</string>
     <string name="labelIdioma">Idioma</string>
-    <string name="labelAbout">Acerca de</string>
-    <string name="aboutMensaje">Desarrollado por: devCodx Software Development</string>
+    <string name="labelInformacion">Informacion</string>
+    <string name="labelAyuda">Ayuda</string>
 
     <!-- Opciones del dialogo idioma -->
     <string name="tituloDialogoIdioma">Seleccionar Idioma</string>
