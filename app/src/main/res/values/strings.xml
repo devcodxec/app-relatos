@@ -14,6 +14,26 @@
     <string name="labelEmail">Email:</string>
     <string name="labelDesEmail">info@devcodx.com</string>
 
+    <!-- Etiquetas layout Información -->
+
+    <string name="labelTituloInfo">Relatos del Buscador Versión 1.0.0</string>
+    <string name="labelSeleccionTextos">Selección de textos:</string>
+    <string name="labelDesSeleccionTextos">Guillem Gallifa Gomez</string>
+    <string name="labelCorrecionEdicion">Edición:</string>
+    <string name="labelDesCorrecionEdicion">Mónica Rovira I Creus</string>
+    <string name="labelTraduccion">Traducción:</string>
+    <string name="labelDesTraduccion">Montserrat Serra Serrabasa</string>
+    <string name="labelAgradecimientos">Agradecimientos:</string>
+    <string name="labelDesAgradecimientos">
+        Quisiera manifestar mi agradecimiento a Idres Shah, Anthony de Mello y Khalil Gibran,
+        entre otros autores, por su monumental investigación y por los cuentos, fragmentos y
+        narraciones atemporales de tradiciones a menudo olvidadas. En una parte más que
+        significativa, esta recopilación ha resultado más fácil gracias a ellos. Por cualquier duda,
+        comentario o sugerencia (o si quieres enviar algún cuento, relato o fragmento) puedes
+        contactar conmigo en unitysearcher@live.com.
+    </string>
+
+
     <!-- Opciones del menú principal-->
     <string name="labelSalir">Salir</string>
     <string name="labelIdioma">Idioma</string>
