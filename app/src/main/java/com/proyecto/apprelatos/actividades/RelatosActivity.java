@@ -146,7 +146,7 @@ public class RelatosActivity  extends AppCompatActivity {
                 salirDialogFragment.show(getFragmentManager(),"Salir");
                 return true;
             case R.id.Informacion:
-                startActivity(new Intent(this, AyudaActivity.class));
+                startActivity(new Intent(this, InformacionActivity.class));
                 return true;
             case R.id.Ayuda:
                 startActivity(new Intent(this, AyudaActivity.class));
