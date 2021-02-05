@@ -1,14 +1,9 @@
 package com.proyecto.apprelatos.actividades;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.proyecto.apprelatos.R;
 
 public class AyudaActivity extends AppCompatActivity {
@@ -17,6 +12,7 @@ public class AyudaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ayuda);
+        setTitle(R.string.app_name);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -28,7 +24,7 @@ public class AyudaActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.RegresarAyuda:
-                startActivity(new Intent(this, RelatosActivity.class));
+                super.onBackPressed();
                 return true;
         }
         return super.onOptionsItemSelected(item);

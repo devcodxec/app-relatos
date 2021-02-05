@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chronicles of the Searcher</string>
+    <string name="app_inicio">AppRelatos</string>
+
+    <!-- Etiquetas layout Portada -->
+
+    <string name="labelInicio">Loading...</string>
+
+    <!-- Etiquetas layout Ayuda -->
+
+    <string name="labelTitulo">Comments and suggestions</string>
+    <string name="labelSitioWeb">Web site:</string>
+    <string name="labelDesSitioWeb">www.devcodx.com</string>
+    <string name="labelEmail">Email:</string>
+    <string name="labelDesEmail">info@devcodx.com</string>
+
+    <!-- Etiquetas layout Información -->
+
+    <string name="labelTituloInfo">Chronicles of the Searcher Version 1.0.0</string>
+    <string name="labelSeleccionTextos">Text selection:</string>
+    <string name="labelDesSeleccionTextos">Guillem Gallifa Gomez</string>
+    <string name="labelCorrecionEdicion">Edition:</string>
+    <string name="labelDesCorrecionEdicion">Mónica Rovira I Creus</string>
+    <string name="labelTraduccion">Translation:</string>
+    <string name="labelDesTraduccion">Montserrat Serra Serrabasa</string>
+    <string name="labelAgradecimientos">Acknowledgements:</string>
+    <string name="labelDesAgradecimientos">
+        I would like to express my gratitude to Idres Shah, Anthony de Mello and Khalil Gibran,
+        among other authors, for their investigation, first, and then for spreading the timeless stories,
+        fragments and narrations from often forgotten traditions. This book has been mostly easier
+        thanks to them. If you have any doubts, comment or suggestion (or if you want to send me a
+        story) you can contact me in unitysearcher@live.com
+    </string>
+
+
+    <!-- Opciones del menú principal-->
+    <string name="labelSalir">Exit</string>
+    <string name="labelIdioma">Language</string>
+    <string name="labelInformacion">Information</string>
+    <string name="labelAyuda">Help</string>
+
+    <!-- Opciones del dialogo idioma -->
+    <string name="tituloDialogoIdioma">Select Language</string>
+    <string name="opcionAceptarDialogoIdioma">Accept</string>
+    <string name="opcionCancelarDialogoIdioma">Cancel</string>
+    <string name="toastMensajeIdioma">The language has been modified successfully</string>
+
+    <!-- Opciones del dialogo salir -->
+    <string name="tituloDialogoSalir">Exit</string>
+    <string name="mensajeDialogoSalir">Are you sure you want to exit?</string>
+    <string name="opcionAceptarDialogoSalir">Accept</string>
+    <string name="opcionCancelarDialogoSalir">Cancel</string>
+
+
+</resources>

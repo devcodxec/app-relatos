@@ -8,10 +8,10 @@
 
     <!-- Etiquetas layout Ayuda -->
 
-    <string name="labelTitulo">Consultas y Sugerencias</string>
+    <string name="labelTitulo">Comentarios y Sugerencias</string>
     <string name="labelSitioWeb">Sitio Web:</string>
     <string name="labelDesSitioWeb">www.devcodx.com</string>
-    <string name="labelEmail">Email:</string>
+    <string name="labelEmail">Correo electrónico:</string>
     <string name="labelDesEmail">info@devcodx.com</string>
 
     <!-- Etiquetas layout Información -->
