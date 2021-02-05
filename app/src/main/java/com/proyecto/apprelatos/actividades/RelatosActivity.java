@@ -1,14 +1,14 @@
 package com.proyecto.apprelatos.actividades;
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -16,10 +16,12 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.proyecto.apprelatos.R;
 import com.proyecto.apprelatos.dialogos.IdiomaDialogFragment;
+import com.proyecto.apprelatos.dialogos.SalirDialogFragment;
 import com.proyecto.apprelatos.modelo.AdaptadorRelato;
 import com.proyecto.apprelatos.modelo.Relato;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class RelatosActivity  extends AppCompatActivity {
 
@@ -29,7 +31,6 @@ public class RelatosActivity  extends AppCompatActivity {
     FirebaseFirestore database = FirebaseFirestore.getInstance();
 
     //Variables para el uso del Adaptador
-
     AdaptadorRelato adaptadorRelato;
 
     //Variable de tipo ListView para asignar el adaptador
@@ -39,6 +40,10 @@ public class RelatosActivity  extends AppCompatActivity {
     Relato relato;
 
     IdiomaDialogFragment idiomaDialogFragment;
+    SalirDialogFragment salirDialogFragment;
+
+    //Variable para controlar el idioma
+    public static String idioma="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +52,35 @@ public class RelatosActivity  extends AppCompatActivity {
 
         lstViewRelatos = (ListView)findViewById(R.id.lstRelatos);
         listaRelatos= new ArrayList<Relato>();
-        obtenerDatosFirebaseES();
 
+        //Configuración general del idioma en toda la App
+        if(idioma=="ES"){
+            obtenerDatosFirebaseES();
+
+        }else if(idioma=="EN") {
+            obtenerDatosFirebaseEN();
+
+        }else{
+            cambiarIdiomaUsuarioApp();
+        }
     }
+
+    public void cambiarIdiomaUsuarioApp(){
+        if(Locale.getDefault().getLanguage()=="es"){
+            obtenerDatosFirebaseES();
+        }
+        if(Locale.getDefault().getLanguage()=="en"){
+            obtenerDatosFirebaseEN();
+        }
+    }
+
+    public void cambiarIdiomaMenu(Menu menu){
+        MenuItem informacionES = menu.findItem(R.id.Informacion);
+        informacionES.setTitle(R.string.labelInformacion);
+        MenuItem ayudaES = menu.findItem(R.id.Ayuda);
+        ayudaES.setTitle(R.string.labelAyuda);
+    }
+
     public void obtenerDatosFirebaseES(){
 
         database.collection("relatos").whereEqualTo("idioma","ES").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -108,7 +139,6 @@ public class RelatosActivity  extends AppCompatActivity {
                         adaptadorRelato = new AdaptadorRelato(RelatosActivity.this, R.layout.formatorelatos, listaRelatos);
                         Log.i(LOG_APP, "**TAMAÑO FINAL!!!!!!!!!: " +listaRelatos.size());
                         lstViewRelatos.setAdapter(adaptadorRelato);
-
                     }
                 }
                 else{
@@ -118,6 +148,26 @@ public class RelatosActivity  extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void cambiarIdiomaES(){
+        Locale locale = new Locale("es", "ES");
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        setTitle(R.string.app_name);
+        idioma="ES";
+    }
+
+    public void cambiarIdiomaEN(){
+        Locale locale = new Locale("en", "US");
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        setTitle(R.string.app_name);
+        idioma="EN";
     }
 
     public void limpiarDatosFirebase(){
@@ -131,6 +181,16 @@ public class RelatosActivity  extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        cambiarIdiomaMenu(menu);
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    public void salir(){
+       finishAffinity(); System.exit(0);
+    }
+
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.Idioma:
@@ -138,10 +198,14 @@ public class RelatosActivity  extends AppCompatActivity {
                 idiomaDialogFragment.show(getFragmentManager(),"Idioma");
                 return true;
             case R.id.Salir:
-                super.onBackPressed(); finishAffinity(); System.exit(0);
+                salirDialogFragment = new SalirDialogFragment();
+                salirDialogFragment.show(getFragmentManager(),"Salir");
                 return true;
-            case R.id.About:
-                //startActivity(new Intent(this, AboutActivity.class));
+            case R.id.Informacion:
+                startActivity(new Intent(this, InformacionActivity.class));
+                return true;
+            case R.id.Ayuda:
+                startActivity(new Intent(this, AyudaActivity.class));
                 return true;
 
         }

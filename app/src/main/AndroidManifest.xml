@@ -29,7 +29,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <!-- Activity para mostrar el activity de Ayuda-->
+        <activity
+            android:name=".actividades.AyudaActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Activity para mostrar el activity de Informacion-->
+        <activity
+            android:name=".actividades.InformacionActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
-
 </manifest>

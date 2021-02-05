@@ -1,21 +1,55 @@
 <resources>
-    <string name="app_name">AppRelatos</string>
+    <string name="app_name">Relatos del Buscador</string>
     <string name="app_inicio">AppRelatos</string>
 
-    <!-- Etiquetas layout Inicio -->
+    <!-- Etiquetas layout Portada -->
 
-    <string name="labelAutor">Por: Guillem Gallifa</string>
+    <string name="labelInicio">Cargando...</string>
+
+    <!-- Etiquetas layout Ayuda -->
+
+    <string name="labelTitulo">Comentarios y Sugerencias</string>
+    <string name="labelSitioWeb">Sitio Web:</string>
+    <string name="labelDesSitioWeb">www.devcodx.com</string>
+    <string name="labelEmail">Correo electrónico:</string>
+    <string name="labelDesEmail">info@devcodx.com</string>
+
+    <!-- Etiquetas layout Información -->
+
+    <string name="labelTituloInfo">Relatos del Buscador Versión 1.0.0</string>
+    <string name="labelSeleccionTextos">Selección de textos:</string>
+    <string name="labelDesSeleccionTextos">Guillem Gallifa Gomez</string>
+    <string name="labelCorrecionEdicion">Edición:</string>
+    <string name="labelDesCorrecionEdicion">Mónica Rovira I Creus</string>
+    <string name="labelTraduccion">Traducción:</string>
+    <string name="labelDesTraduccion">Montserrat Serra Serrabasa</string>
+    <string name="labelAgradecimientos">Agradecimientos:</string>
+    <string name="labelDesAgradecimientos">
+        Quisiera manifestar mi agradecimiento a Idres Shah, Anthony de Mello y Khalil Gibran,
+        entre otros autores, por su monumental investigación y por los cuentos, fragmentos y
+        narraciones atemporales de tradiciones a menudo olvidadas. En una parte más que
+        significativa, esta recopilación ha resultado más fácil gracias a ellos. Por cualquier duda,
+        comentario o sugerencia (o si quieres enviar algún cuento, relato o fragmento) puedes
+        contactar conmigo en unitysearcher@live.com.
+    </string>
+
 
     <!-- Opciones del menú principal-->
     <string name="labelSalir">Salir</string>
     <string name="labelIdioma">Idioma</string>
-    <string name="labelAbout">Acerca de</string>
-    <string name="aboutMensaje">Desarrollado por: devCodx Software Development</string>
+    <string name="labelInformacion">Información</string>
+    <string name="labelAyuda">Ayuda</string>
 
     <!-- Opciones del dialogo idioma -->
-    <string name="tituloDialogo">Seleccionar Idioma</string>
-    <string name="opcionAceptarDialogo">Aceptar</string>
-    <string name="opcionCancelarDialogo">Cancelar</string>
+    <string name="tituloDialogoIdioma">Seleccionar Idioma</string>
+    <string name="opcionAceptarDialogoIdioma">Aceptar</string>
+    <string name="opcionCancelarDialogoIdioma">Cancelar</string>
     <string name="toastMensajeIdioma">El idioma se ha modificado correctamente</string>
+
+    <!-- Opciones del dialogo salir -->
+    <string name="tituloDialogoSalir">Salir</string>
+    <string name="mensajeDialogoSalir">Esta seguro que desea salir?</string>
+    <string name="opcionAceptarDialogoSalir">Aceptar</string>
+    <string name="opcionCancelarDialogoSalir">Cancelar</string>
 
 </resources>
