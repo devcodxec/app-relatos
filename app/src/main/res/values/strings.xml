@@ -8,10 +8,10 @@
 
     <!-- Etiquetas layout Ayuda -->
 
-    <string name="labelTitulo">Comentarios y Sugerencias</string>
-    <string name="labelSitioWeb">Sitio Web:</string>
+    <string name="labelTitulo">Soporte técnico</string>
+    <string name="labelSitioWeb">Sitio web:</string>
     <string name="labelDesSitioWeb">www.devcodx.com</string>
-    <string name="labelEmail">Correo electrónico:</string>
+    <string name="labelEmail">Correo:</string>
     <string name="labelDesEmail">info@devcodx.com</string>
 
     <!-- Etiquetas layout Información -->
@@ -32,7 +32,7 @@
         comentario o sugerencia (o si quieres enviar algún cuento, relato o fragmento) puedes
         contactar conmigo en relatsdelbuscador@gmail.com
     </string>
-
+    <string name="labelNombreAutor">-Guillem</string>
 
     <!-- Opciones del menú principal-->
     <string name="labelSalir">Salir</string>
