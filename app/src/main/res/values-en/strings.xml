@@ -9,7 +9,7 @@
 
     <!-- Etiquetas layout Ayuda -->
 
-    <string name="labelTitulo">Comments and suggestions</string>
+    <string name="labelTitulo">Technical support</string>
     <string name="labelSitioWeb">Web site:</string>
     <string name="labelDesSitioWeb">www.devcodx.com</string>
     <string name="labelEmail">Email:</string>
@@ -30,9 +30,9 @@
         among other authors, for their investigation, first, and then for spreading the timeless stories,
         fragments and narrations from often forgotten traditions. This book has been mostly easier
         thanks to them. If you have any doubts, comment or suggestion (or if you want to send me a
-        story) you can contact me in unitysearcher@live.com
+        story) you can contact me in relatsdelbuscador@gmail.com
     </string>
-
+    <string name="labelNombreAutor">-Guillem</string>
 
     <!-- Opciones del menú principal-->
     <string name="labelSalir">Exit</string>

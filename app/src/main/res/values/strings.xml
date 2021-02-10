@@ -8,10 +8,10 @@
 
     <!-- Etiquetas layout Ayuda -->
 
-    <string name="labelTitulo">Comentarios y Sugerencias</string>
-    <string name="labelSitioWeb">Sitio Web:</string>
+    <string name="labelTitulo">Soporte técnico</string>
+    <string name="labelSitioWeb">Sitio web:</string>
     <string name="labelDesSitioWeb">www.devcodx.com</string>
-    <string name="labelEmail">Correo electrónico:</string>
+    <string name="labelEmail">Correo:</string>
     <string name="labelDesEmail">info@devcodx.com</string>
 
     <!-- Etiquetas layout Información -->
@@ -30,9 +30,9 @@
         narraciones atemporales de tradiciones a menudo olvidadas. En una parte más que
         significativa, esta recopilación ha resultado más fácil gracias a ellos. Por cualquier duda,
         comentario o sugerencia (o si quieres enviar algún cuento, relato o fragmento) puedes
-        contactar conmigo en unitysearcher@live.com.
+        contactar conmigo en relatsdelbuscador@gmail.com
     </string>
-
+    <string name="labelNombreAutor">-Guillem</string>
 
     <!-- Opciones del menú principal-->
     <string name="labelSalir">Salir</string>
